@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 
 CREATE DATABASE professor;
 
-USE crud;
+USE professor;
 
 CREATE TABLE `prof` (
   `ID` int(11) NOT NULL,
