@@ -17,15 +17,9 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
---
--- Banco de dados: `crud`
---
 CREATE DATABASE professor;
-----------------------------------
 
---
--- Estrutura da tabela `aluno`
---
+USE crud;
 
 CREATE TABLE `prof` (
   `ID` int(11) NOT NULL,
@@ -34,9 +28,6 @@ CREATE TABLE `prof` (
   `Carga` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Extraindo dados da tabela `aluno`
---
 
 INSERT INTO `prof` (`ID`, `Nome`, `Materia`, `Carga`) VALUES
 (1, 'Claudio', 'Ulisse', 43),
@@ -60,6 +51,7 @@ INSERT INTO `prof` (`ID`, `Nome`, `Materia`, `Carga`) VALUES
 (21, 'f', 'e', 4),
 (22, 'w', 'w', 2),
 (23, 'd', 'd', 2);
+
 
 --
 -- Índices para tabelas despejadas
@@ -85,3 +77,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
